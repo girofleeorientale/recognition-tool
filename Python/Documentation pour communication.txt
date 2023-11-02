@@ -1,0 +1,14 @@
+********** Protocole de communication **********
+--- Python :
+0 : Attente de reception de [ARDUINO_READY] de C++ quand le setup est terminé
+1 : Demande du placement d'un Oréo avec [PLACE_OREO]
+2 : Attente de la confirmation de C++ de la fin du placement avec [END_PLACE_OREO]
+3 : Analyse de l'oréo avec le ML, puis demande de basculement avec [GOOD_OREO] ou [BAD_OREO]
+4 : Attente de la confimation de C++ que le basculement + la remise à niveau du plateau est terminée
+
+--- C++ :
+0 : Envoi de [ARDUINO_READY] quand le setup est fini
+1 : Lancement de la fonction PlaceOreo() 
+2 : envoi de [END_PLACE_OREO] à la fin de celle-ci
+3 : Attente de [GOOD_OREO] ou [BAD_OREO] selon la classification faite + basculement
+4 : Envoi de [END_FLIP_BOARD] + remise de state à 1

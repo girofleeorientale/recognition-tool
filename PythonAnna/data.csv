@@ -1,0 +1,131 @@
+name,shape comparison,contour area,noiseless contour area
+entier1.jpg,0.0002,84906.5,76898.5
+entier2.jpg,0.0284,84953.0,76328.0
+entier3.jpg,0.0098,84100.0,75413.0
+entier4.jpg,0.0096,84499.5,76042.0
+entier5.jpg,0.0143,86623.5,77311.5
+entier6.jpg,0.0149,97618.5,88137.0
+entier7.jpg,0.0475,83788.5,76111.5
+entier8.jpg,0.0294,86204.5,77656.0
+entier9.jpg,0.003,88438.5,80252.0
+entier10.jpg,0.0046,84220.5,76554.0
+fissure1.jpg,0.1134,82161.5,40126.5
+fissure2.jpg,0.0876,85319.0,72742.0
+fissure3.jpg,0.0931,81644.5,54498.5
+fissure4.jpg,0.0599,84364.5,74500.0
+fissure5.jpg,0.0431,87302.0,77849.0
+fissure6.jpg,0.0753,90524.5,81319.5
+fissure7.jpg,0.0847,83779.5,47559.5
+fissure8.jpg,0.0578,83417.0,74552.5
+fissure9.jpg,0.0915,86771.5,72594.5
+fissure10.jpg,0.1477,99054.5,84982.5
+mange1.jpg,0.0284,80352.0,70269.0
+mange2.jpg,0.0583,79323.5,68620.0
+mange3.jpg,0.0437,67969.0,60259.5
+mange4.jpg,0.0132,83699.0,75187.0
+mange5.jpg,0.0255,80278.5,70705.5
+mange6.jpg,0.0467,86042.0,77279.5
+mange7.jpg,0.0383,79677.0,71211.5
+
+======== del =======
+entier1.jpg,entier
+entier2.jpg,entier
+entier3.jpg,entier
+entier4.jpg,entier
+entier5.jpg,entier
+entier6.jpg,entier
+entier7.jpg,entier
+entier8.jpg,entier
+entier9.jpg,entier
+entier10.jpg,entier
+fissure1.jpg,fissure
+fissure2.jpg,fissure
+fissure3.jpg,fissure
+fissure4.jpg,fissure
+fissure5.jpg,entier
+fissure6.jpg,fissure
+fissure7.jpg,fissure
+fissure8.jpg,fissure
+fissure9.jpg,fissure
+fissure10.jpg,fissure
+mange1.jpg,mange
+mange2.jpg,fissure
+mange3.jpg,mange
+mange4.jpg,mange
+mange5.jpg,mange
+mange6.jpg,entier
+mange7.jpg,mange
+non4.jpg,entier
+non7.jpg,fissure
+non11.jpg,fissure
+
+===== more tests =====
+WIN_20221204_18_10_45_Pro.jpg,fissure  WR (entier)
+WIN_20221204_18_11_00_Pro.jpg,entier  OK
+WIN_20221204_18_11_22_Pro.jpg,fissure  WR (entier)
+WIN_20221204_18_12_23_Pro.jpg,entier   OK 
+WIN_20221204_18_12_46_Pro.jpg,entier   OK
+WIN_20221204_18_13_12_Pro.jpg,fissure  OK 
+WIN_20221204_18_13_40_Pro.jpg,entier   WR (mange)
+WIN_20221204_18_14_07_Pro.jpg,entier   WR (fissure) 
+WIN_20221204_18_14_38_Pro.jpg,fissure   OK 
+WIN_20221204_18_15_02_Pro.jpg,entier   WR (fissure)
+WIN_20221204_18_15_16_Pro.jpg,fissure  OK 
+WIN_20221204_18_15_32_Pro.jpg,entier   WR (fissure)
+WIN_20221204_18_15_49_Pro.jpg,fissure  OK
+WIN_20221204_18_16_02_Pro.jpg,not an oreo  WR (fissure)
+WIN_20221204_18_16_19_Pro.jpg,entier  OK
+mange3.jpg,mange
+fissure1.jpg,fissure
+
+===== test with the new classifier =====
+entier1.jpg,entier
+entier2.jpg,entier
+entier3.jpg,entier
+entier4.jpg,entier
+entier5.jpg,entier
+entier6.jpg,entier
+entier7.jpg,entier
+entier8.jpg,entier
+entier9.jpg,entier
+entier10.jpg,entier
+fissure1.jpg,defectueux
+fissure2.jpg,defectueux
+fissure3.jpg,defectueux
+fissure4.jpg,defectueux
+fissure5.jpg,defectueux
+fissure6.jpg,defectueux
+fissure7.jpg,defectueux
+fissure8.jpg,defectueux
+fissure9.jpg,defectueux
+fissure10.jpg,defectueux
+mange1.jpg,defectueux
+mange2.jpg,defectueux
+mange3.jpg,entier
+mange4.jpg,defectueux
+mange5.jpg,defectueux
+mange6.jpg,defectueux
+mange7.jpg,defectueux
+non4.jpg,entier
+non7.jpg,defectueux
+non11.jpg,entier
+WIN_20221204_18_10_45_Pro.jpg,entier
+WIN_20221204_18_11_00_Pro.jpg,entier
+WIN_20221204_18_11_22_Pro.jpg,entier
+WIN_20221204_18_12_23_Pro.jpg,entier
+WIN_20221204_18_12_46_Pro.jpg,entier
+WIN_20221204_18_13_12_Pro.jpg,defectueux
+WIN_20221204_18_13_40_Pro.jpg,defectueux
+WIN_20221204_18_14_07_Pro.jpg,defectueux
+WIN_20221204_18_14_38_Pro.jpg,defectueux
+WIN_20221204_18_15_02_Pro.jpg,defectueux
+WIN_20221204_18_15_16_Pro.jpg,defectueux
+WIN_20221204_18_15_32_Pro.jpg,defectueux
+WIN_20221204_18_15_49_Pro.jpg,defectueux
+WIN_20221204_18_16_02_Pro.jpg,   ERROR (circle not found)
+WIN_20221204_18_16_19_Pro.jpg,entier
+WIN_20221204_18_16_30_Pro.jpg,entier
+WIN_20221204_18_16_43_Pro.jpg,entier
+WIN_20221204_18_16_59_Pro.jpg,defectueux
+WIN_20221204_18_17_57_Pro.jpg,defectueux
+WIN_20221204_18_18_11_Pro.jpg,   ERROR (circle not found)
