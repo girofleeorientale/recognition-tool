@@ -1,0 +1,55 @@
+########## Prise de note pour le compte rendu ##########
+
+
+--- Création des oréos : 
+Création des oréos grâce au logiciel 'fusion' qui permet de modéliser des objet. 
+Une fois que l'oréo est modélisé, il faut indiquer à quels endroits la découpe laser devra passer et avec quelle intensité.
+(Pour ça, on utilise différents niveaux de gris (noir = découpe, blanc = marquage de la surface).
+Par dessus la modélisation de l'oréo, on ajoute les différents défauts (fissure = une découpe, effacement = marquage de la surface, ...)
+
+Ensuite peinture des "crêmes" qui sont au centre de l'oréo + assemblage de ceux-ci avec de la colle à bois. (illustration)
+
+Une fois terminés, on sépare nos Oréos en 4 groupes distincts (on les marque avec des points de couleur pour les répérer), afin de pouvoir en utiliser certains pour l'apprentissage, d'autres pour le test, et éventuellement faire des combinaisons de plusieurs groupes. 
+Le fichier "Set information" donne les informations sur la composition de ces 4 groupes
+
+
+--- Création de notre dataSet :
+Une fois les Oréos assemblés, il faut créer notre base de données de photos. Pour se faire, on a mis en place un mini studio photo (illustration) pour prendre toutes les photos dans de bonnes conditions.
+Pour avoir une base de donnée assez fournie, on a pris 6 photos pour un même Oréo, 3 par face, en tourant et déplaçant l'oréo à chaque prise.
+
+La base de données étant constituée, on labélise alors nos images sur le site Makesense.ai (https://www.makesense.ai/). (illustration)
+
+
+
+--- Mise en place du machine learning : 
+
+- YOLOv5:
+Dans un premier temps, nous utilisons l'algorithme YOLOv5 pour un premier modèle. 
+Pour l'entrainer, nous utilisons google collab afin de profiter de la puissance de calcul que fournit google.
+On effectue alors de multiples entrainement afin d'augmenter la fiabilité du modèle (variation du nombre d'epochs, de batch, de set de données, et d'autres parmètres).
+
+(ICI seulement avec un set d'apprentissage et un de validation (environ 50 photos en tout)).
+Dès les premiers entrainement, notre modèle est assez performant dans la detection des Oréos et des différents défauts.
+En revanche, on remarque quelques points à améliorer (exemple : si on dessine quelque chose qui ressemble à un oréo sur un feuille, notre modèle le reconnait (ce qu'on voudrait eviter)).
+On remarque aussi que certains défauts sont moins bien détectés que d'autres, notamment si un Oréo a trop de défauts différents, notre modèle peut "l'oublier".
+-> On se pose alors la question de pourquoi : Manque d'Oréos de certains types ?, mauvais paramètres dans l'apprentissage?, problème de labélisation ou de photos ?, ...
+
+Première piste d'amélioration du modèle : On ajoute des images 'non-Oréo' (stylo, gomme, objets ronds, ...).
+-> On constate une amélioration (notamment sur la non-detection d'objets qui ne sont pas des oreos mais qui l'etaient avant)
+
+Deuxième piste : Ajout des deux echantillons (rouge et vert) qui n'étaient pas encore labélisés.
+-> A voir ...
+
+
+--- Conception de la machine :
+Avant de se lancer dans la fabrication de la machine, on réfléchit à son fonctionnement dans un premier temps, puis on commence la conception sur un logiciel de CAO. (Ici fusion)
+On modélise chaque pièce en prenant les cotes de chaque composant, puis on essaie de les positionner de façon à ce qu'il n'y ait pas de problème lors du montage. 
+Pour avoir un rendu propre, on fabrique des pièces en impression 3D. (Une pour maintenir le tube droit, une pour la caméra, d'autres pour la gestion de la glissière, ...)
+Cette étape a nécessité un bon moment car il a fallu recommencer certaines pièces qui n'étaient pas de bonne dimension quand on a essaié de les positionner avec les autres composants.
+
+
+programmation des composants : Fonctions haut niveau
+
+communication : Problème de message incomplet -> réduction de la vitesse de com
+et problème d'accès au port depuis python
+

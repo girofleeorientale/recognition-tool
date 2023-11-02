@@ -1,0 +1,72 @@
+# Projet :
+Contrôle qualité de gâteaux Oréos
+
+# Membres :
+# Membre 1 :
+Golikova Anna : ann.golikova@gmail.com
+# Membre 2 :
+Lévy Rémi : remi.levy91@gmail.com
+
+17/11/2022
+Pagani:
+    - trouver projet soit ocr-tableau, soit cabane-à-oiseaux soit alarme-classificateur-humains/animal domestique ou autres variants
+    
+
+24/11/2022
+Pagani :
+    - ok pour garder le projet oreo avec d'emergence le projet detecteur animal/homme
+    - avant noel etre capable de me montrer des experiments avec un ou plusieur modeles qui donnent des informations à partir des images d'oreo.
+    - etre capable à m'expliquer comment utiliser ces informations pour detecter defauts oreo.
+    
+    - Golikova abseante
+
+15/12/2022
+Pagani
+    - Golikova toujours abseante
+    - Levy me montre utilisation de Yolo pour detecter position oreo et ses defauts. Excellent exactitude. 
+    - pb: quel est le coeur du projet d'ici à avril ? où est le gros de la difficultee de programmation ? 
+    Peut-etre dans la partie gerant la machine qui fait deplacer oreo et les departage selon les previsions de Yolo
+    - continuez sur ce projet, on verra plus tard si il faut chercher une variante pour le rendre plus challenging du point de vue de la programmation
+
+à revoir le 19 janvier. 
+
+25/01/2022:
+Pagani
+    - vu simulation, et different partie du code.
+    - Golikova s'occupera de detecter defauts par techiiques d'analyses d'images par opencv plus standard et fusionner avec modele yolo
+
+15/02/2022:
+Degorre
+
+Fait:
+
+- déterminé la cause du blocage de la machine (pertes dans la communication série)
+  -> pistes pour améliorer : acquittements, numéros de messages, timeouts, ...
+- problèmes de détection dûs au changement d'environnement -> refait l'entraînement, ce qui a fait passer le taux de détection de 70-80% à ~90%
+- expérimentations OpenCV -> pour l'instant ne semble pas être plus discriminant (mais il y a encore des pistes à explorer)
+
+Faire
+
+- explorer les pistes évoquées plus haut
+
+29/03/2023
+
+Fait :
+
+Rémi (absent) : 
+
+- résolu problème surapprentissage (yolo)
+- communication série machine/PC, heartbeat pour éviter les blocages
+- IG exploration tk
+
+Anna :
+- algo en cours d'élaboration pour reconnaissance images avec opencv
+- plusieurs indices proposés, mais aucun n'admet de seuil sans faux positif et sans faux négatif (-> combiner les indices avec des seuils bas et safe?)
+
+À faire:
+
+continuer expérimentations
+
+19/04/2023
+Pagani
+vu, très bon projet. peut-etre experimenter encore partie reconnaissance fait à la main par comparaison avec un modele. 
