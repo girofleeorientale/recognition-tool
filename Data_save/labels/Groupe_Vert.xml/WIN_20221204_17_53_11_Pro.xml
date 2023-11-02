@@ -1,0 +1,37 @@
+<annotation>
+	<folder>vert</folder>
+	<filename>WIN_20221204_17_53_11_Pro.jpg</filename>
+	<path>/vert/WIN_20221204_17_53_11_Pro.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Mangé</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>634</xmin>
+			<ymin>434</ymin>
+			<xmax>761</xmax>
+			<ymax>583</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Oréo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>626</xmin>
+			<ymin>436</ymin>
+			<xmax>966</xmax>
+			<ymax>769</ymax>
+		</bndbox>
+	</object>
+</annotation>

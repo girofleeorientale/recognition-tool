@@ -1,0 +1,37 @@
+<annotation>
+	<folder>vert</folder>
+	<filename>WIN_20221204_17_55_05_Pro.jpg</filename>
+	<path>/vert/WIN_20221204_17_55_05_Pro.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Fissure</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1339</xmin>
+			<ymin>325</ymin>
+			<xmax>1523</xmax>
+			<ymax>642</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Oréo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1245</xmin>
+			<ymin>315</ymin>
+			<xmax>1617</xmax>
+			<ymax>655</ymax>
+		</bndbox>
+	</object>
+</annotation>

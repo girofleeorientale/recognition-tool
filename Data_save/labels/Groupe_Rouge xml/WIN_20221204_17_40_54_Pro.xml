@@ -1,0 +1,25 @@
+<annotation>
+	<folder>my-project-name</folder>
+	<filename>WIN_20221204_17_40_54_Pro.jpg</filename>
+	<path>/my-project-name/WIN_20221204_17_40_54_Pro.jpg</path>
+	<source>
+		<database>Unspecified</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<object>
+		<name>Oréo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>741</xmin>
+			<ymin>137</ymin>
+			<xmax>1077</xmax>
+			<ymax>477</ymax>
+		</bndbox>
+	</object>
+</annotation>

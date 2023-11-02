@@ -1,0 +1,75 @@
+---------------------------- Information sur les sets de données -------------------------
+Les Oréos sont répartis dans 4 groupes différents, pour pouvoir distinguer les sets de test, d'apprentissage, ... et éventuellement pouvoir les faire varier.
+Ils sont donc distingués selon 4 couleurs : Rouge, Vert, Bleu, Noir. (Marqués sur la tranche)
+
+
+---------------------------- Les différentes classes -------------------------
+Les différentes classes sont :
+- Les Oréos sans défauts
+- Les Oréos fissurés
+- Les Oréos effacés (= Mauvaise impression du dessin)
+- Les Oréos mangés (= Avec une trace de dents sur un bord)
+- Les Oréos décalés (= La crème dépasse du gâteau)
+- Les gâteaux "non-oréo" (ex : pepito)
+
+Certains Oréos du set peuvent comporter plusieurs défauts à la fois. Cependant, si un Oréo a une classe de défaut sur une face, il l'a forcément sur l'autre également
+
+
+---------------------------- Référencement des Oréos disponibles -------------------------
+Tout groupe du set confondu, on compte :
+- 26 Oréos sans défauts
+- 23 Oréos fissurés
+- 8 Oréos mangés
+- 9 Oréos décalés
+- 11 Oréos effacés
+- 4 non-Oréos
+- 1 Oréo mangé + effacé
+- 4 Oréos décalés + effacés
+- 5 Oréos fissurés + effacés
+
+Pour un total de 91 Oréos.
+
+
+*** Groupe Rouge : 
+- 7 Oréos sans défauts
+- 6 Oréos fissurés
+- 2 Oréos mangés
+- 2 Oréos décalés
+- 3 Oréos effacés
+- 1 non-Oréos
+- 0 Oréo mangé + effacé
+- 1 Oréos décalés + effacés
+- 1 Oréos fissurés + effacés
+
+*** Groupe Bleu: 
+- 6 Oréos sans défauts
+- 6 Oréos fissurés
+- 2 Oréos mangés
+- 2 Oréos décalés
+- 3 Oréos effacés
+- 1 non-Oréos
+- 1 Oréo mangé + effacé
+- 1 Oréos décalés + effacés
+- 1 Oréos fissurés + effacés
+
+*** Groupe Vert : 
+- 6 Oréos sans défauts
+- 6 Oréos fissurés
+- 2 Oréos mangés
+- 3 Oréos décalés
+- 2 Oréos effacés
+- 1 non-Oréos
+- 0 Oréo mangé + effacé
+- 1 Oréos décalés + effacés
+- 2 Oréos fissurés + effacés
+
+*** Groupe Noir : 
+- 7 Oréos sans défauts
+- 5 Oréos fissurés
+- 2 Oréos mangés
+- 2 Oréos décalés
+- 3 Oréos effacés
+- 1 non-Oréos
+- 0 Oréo mangé + effacé
+- 1 Oréos décalés + effacés
+- 1 Oréos fissurés + effacés
